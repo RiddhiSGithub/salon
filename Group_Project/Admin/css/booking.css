@@ -1,0 +1,278 @@
+﻿body {
+    background-color: #FFCCD5;
+    margin: 0;
+    font-family: 'Yatra One', sans-serif;
+}
+/*navigation*/
+* {
+    /*    transition:all 0.3s ease-in-out;*/
+    box-sizing: border-box;
+}
+
+.container {
+    clear: both;
+    overflow: auto;
+    background-color: #FF4D6D;
+    margin-bottom: 10px;
+}
+
+.nav {
+    float: right;
+    padding: 30px 100px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.logo img {
+    float: left;
+    padding-top: 10px;
+    padding-left: 10px;
+    border-radius: 50%;
+}
+
+.nav ul li {
+    display: inline-block;
+    padding: 10px;
+    font-size: 20px;
+    /*  font-family:raleway;*/
+}
+
+li a {
+    color: #FFCCD5;
+    text-decoration: none;
+    padding: 10px;
+}
+
+
+.nav ul li a:hover {
+    color: #A4133C;
+    font-size: 30px;
+    padding: 0;
+}
+
+
+
+/*form*/
+.date, .checkbox {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.button {
+    width: 100%;
+    background-color: #FF4D6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+    .button:hover {
+        background-color: #A4133C;
+    }
+
+.form {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+
+/* The container */
+.container1 {
+    display: block;
+    background-color: #f2f2f2;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+    /* Hide the browser's default checkbox */
+    .container1 .checkbox {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container1:hover .checkbox ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container1 .checkbox ~ .checkmark {
+    background-color: #FF4D6D;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.container1 .checkbox ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.container1 .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+.customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+    .customers .td, .customers .th {
+        border: 1px solid white;
+        padding: 8px;
+    }
+
+
+    .customers .tr:hover {
+        background-color: #ddd;
+    }
+
+    .customers .th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #FF4D6D;
+        color: white;
+    }
+
+
+/*Footer css*/
+.footer-distributed {
+    background-color: #292c2f;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: normal 16px sans-serif;
+    padding: 45px 50px;
+}
+
+    .footer-distributed .footer-left p {
+        color: #8f9296;
+        font-size: .nav ul 14px;
+        margin: 0;
+        font-family: raleway;
+    }
+
+    /* Footer links */
+
+    .footer-distributed p.footer-links {
+        font-size: 18px;
+        font-weight: bold;
+        color: #ffffff;
+        margin: 0 0 10px;
+        padding: 0;
+        transition: ease .25s;
+    }
+
+        .footer-distributed p.footer-links a {
+            display: inline-block;
+            line-height: 1.8;
+            text-decoration: none;
+            color: inherit;
+            transition: ease .25s;
+        }
+
+    .footer-distributed .footer-links a:before {
+        content: "·";
+        font-size: 20px;
+        left: 0;
+        color: #fff;
+        display: inline-block;
+        padding-right: 5px;
+    }
+
+    .footer-distributed .footer-links .link-1:before {
+        content: none;
+    }
+
+    .footer-distributed .footer-right {
+        float: right;
+        margin-top: 6px;
+        max-width: 180px;
+    }
+
+        .footer-distributed .footer-right a {
+            display: inline-block;
+            width: 35px;
+            height: 35px;
+            background-color: #33383b;
+            border-radius: 2px;
+            font-size: 20px;
+            color: #ffffff;
+            text-align: center;
+            line-height: 35px;
+            margin-left: 3px;
+            transition: all .25s;
+        }
+
+            .footer-distributed .footer-right a:hover {
+                transform: scale(1.1);
+                -webkit-transform: scale(1.1);
+            }
+
+    .footer-distributed p.footer-links a:hover {
+        text-decoration: underline;
+    }
+
+/* Media Queries */
+
+@media (max-width: 600px) {
+    .footer-distributed .footer-left, .footer-distributed .footer-right {
+        text-align: center;
+    }
+
+    .footer-distributed .footer-right {
+        float: none;
+        margin: 0 auto 20px;
+    }
+
+    .footer-distributed .footer-left p.footer-links {
+        line-height: 1.8;
+    }
+}

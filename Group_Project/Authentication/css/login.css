@@ -1,0 +1,109 @@
+﻿body {
+    background-color: #FFCCD5;
+    margin: 0;
+    font-family: 'Yatra One', sans-serif;
+}
+/*navigation*/
+* {
+    transition: all 0.3s ease-in-out;
+    box-sizing: border-box;
+}
+
+.container {
+    clear: both;
+    overflow: auto;
+    background-color: #FF4D6D;
+    margin-bottom: 10px;
+}
+
+.nav {
+    float: right;
+    padding: 30px 100px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.logo img {
+    float: left;
+    padding-top: 10px;
+    padding-left: 10px;
+    border-radius: 50%;
+}
+
+.nav ul li {
+    display: inline-block;
+    padding: 10px;
+    font-size: 20px;
+    /*  font-family:raleway;*/
+}
+
+li a {
+    color: #FFCCD5;
+    text-decoration: none;
+    padding: 10px;
+}
+
+
+.nav ul li a:hover {
+    color: #A4133C;
+    font-size: 30px;
+    padding: 0;
+}
+
+
+/*form css*/
+form {
+    border: 3px solid #f1f1f1;
+    margin-bottom: 10px;
+    background-color: #f2f2f2;
+}
+
+.input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.button {
+    background-color: #FF4D6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+    button:hover {
+        background-color: #A4133C;
+    }
+
+.container1 {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+}
+
+a {
+    color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+    background-color: #f1f1f1;
+    text-align: center;
+}

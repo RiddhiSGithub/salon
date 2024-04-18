@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="BookAppointment">
+  <DataContextMoniker Name="/BookAppointmentDataContext" />
+  <nestedChildShapes>
+    <classShape Id="b7d69871-1619-4918-9c9b-e13d70363c06" absoluteBounds="3.5, 1.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/BookAppointmentDataContext/Tbl_Appointment_Master" />
+      <nestedChildShapes>
+        <elementListCompartment Id="94becae4-e6b7-4638-b967-294feb54944e" absoluteBounds="3.515, 2.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="642db8e0-91ab-4cd0-9f97-40f071881b8d" absoluteBounds="1.25, 1.125, 2, 1.3862939453125">
+      <DataClassMoniker Name="/BookAppointmentDataContext/Tbl_Appointment_Details" />
+      <nestedChildShapes>
+        <elementListCompartment Id="794d1c69-41d6-4fe6-b028-4900795a33f2" absoluteBounds="1.2650000000000001, 1.585, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(1.94931705603966 : 2.5112939453125); (1.94931705603966 : 2.7612939453125); (2.56500117938702 : 2.7612939453125); (2.56500117938702 : 2.5112939453125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/BookAppointmentDataContext/Tbl_Appointment_Details/Tbl_Appointment_Detail_Tbl_Appointment_Detail" />
+      <nodes>
+        <classShapeMoniker Id="642db8e0-91ab-4cd0-9f97-40f071881b8d" />
+        <classShapeMoniker Id="642db8e0-91ab-4cd0-9f97-40f071881b8d" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

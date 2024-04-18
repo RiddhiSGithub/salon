@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="sms" Class="BookAppointmentDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Table Name="dbo.Tbl_Appointment_Master" Member="Tbl_Appointment_Masters">
+    <Type Name="Tbl_Appointment_Master">
+      <Column Name="app_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="app_date" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="app_start_time" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="app_end_time" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="cust_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="app_total_cost" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="app_status" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Tbl_Appointment_Details" Member="Tbl_Appointment_Details">
+    <Type Name="Tbl_Appointment_Details">
+      <Column Name="app_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="app_id_master" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="service_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Tbl_Appointment_Detail_Tbl_Appointment_Detail" Member="Tbl_Appointment_Details1" ThisKey="app_id" OtherKey="app_id_master" Type="Tbl_Appointment_Details" />
+      <Association Name="Tbl_Appointment_Detail_Tbl_Appointment_Detail" Member="Tbl_Appointment_Detail1" ThisKey="app_id_master" OtherKey="app_id" Type="Tbl_Appointment_Details" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>
